@@ -34,7 +34,7 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  result = {
+  gross_total = {
             "#{nds[0][:name]}" =>  nds[0][:movies][0][:worldwide_gross] + nds[0][:movies][1][:worldwide_gross] + nds[0][:movies][2][:worldwide_gross] + nds[0][:movies][3][:worldwide_gross] + nds[0][:movies][4][:worldwide_gross] + nds[0][:movies][5][:worldwide_gross], 
             "#{nds[1][:name]}" =>  nds[1][:movies][0][:worldwide_gross] + nds[1][:movies][1][:worldwide_gross] + nds[1][:movies][2][:worldwide_gross] + nds[1][:movies][3][:worldwide_gross] + nds[1][:movies][4][:worldwide_gross] + nds[1][:movies][5][:worldwide_gross],
             "#{nds[2][:name]}" => nds[2][:movies][0][:worldwide_gross] + nds[2][:movies][1][:worldwide_gross] + nds[2][:movies][2][:worldwide_gross] + nds[2][:movies][3][:worldwide_gross] + nds[2][:movies][4][:worldwide_gross] + nds[2][:movies][5][:worldwide_gross] + nds[2][:movies][6][:worldwide_gross],
@@ -45,6 +45,6 @@ def directors_totals(nds)
             "#{nds[7][:name]}" => nds[7][:movies][0][:worldwide_gross] + nds[7][:movies][1][:worldwide_gross] + nds[7][:movies][2][:worldwide_gross] + nds[7][:movies][3][:worldwide_gross] + nds[7][:movies][4][:worldwide_gross] + nds[7][:movies][5][:worldwide_gross],
             "#{nds[8][:name]}" => nds[8][:movies][0][:worldwide_gross] + nds[8][:movies][1][:worldwide_gross] + nds[8][:movies][2][:worldwide_gross] + nds[8][:movies][3][:worldwide_gross] + nds[8][:movies][4][:worldwide_gross] + nds[8][:movies][5][:worldwide_gross]
           }
-    return result
+    gross_total
 end 
 
