@@ -44,7 +44,7 @@ def directors_totals(nds)
             "#{nds[6][:name]}" => nds[6][:movies][0][:worldwide_gross] + nds[6][:movies][1][:worldwide_gross] + nds[6][:movies][2][:worldwide_gross] + nds[6][:movies][3][:worldwide_gross] + nds[6][:movies][4][:worldwide_gross] + nds[6][:movies][5][:worldwide_gross],
             "#{nds[7][:name]}" => nds[7][:movies][0][:worldwide_gross] + nds[7][:movies][1][:worldwide_gross] + nds[7][:movies][2][:worldwide_gross] + nds[7][:movies][3][:worldwide_gross] + nds[7][:movies][4][:worldwide_gross] + nds[7][:movies][5][:worldwide_gross],
             "#{nds[8][:name]}" => nds[8][:movies][0][:worldwide_gross] + nds[8][:movies][1][:worldwide_gross] + nds[8][:movies][2][:worldwide_gross] + nds[8][:movies][3][:worldwide_gross] + nds[8][:movies][4][:worldwide_gross] + nds[8][:movies][5][:worldwide_gross]
-          }}
+          }
    
 end 
 
