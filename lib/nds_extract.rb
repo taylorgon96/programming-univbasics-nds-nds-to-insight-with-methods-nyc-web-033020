@@ -34,7 +34,17 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  result = {}
+  result = { {
+            "#{nds[0][:name]}" =>  nds[0][:movies][0][:worldwide_gross] + nds[0][:movies][1][:worldwide_gross] + nds[0][:movies][2][:worldwide_gross] + nds[0][:movies][3][:worldwide_gross] + nds[0][:movies][4][:worldwide_gross] + nds[0][:movies][5][:worldwide_gross], 
+            "#{nds[1][:name]}" =>  nds[1][:movies][0][:worldwide_gross] + nds[1][:movies][1][:worldwide_gross] + nds[1][:movies][2][:worldwide_gross] + nds[1][:movies][3][:worldwide_gross] + nds[1][:movies][4][:worldwide_gross] + nds[1][:movies][5][:worldwide_gross],
+            "#{nds[2][:name]}" => nds[2][:movies][0][:worldwide_gross] + nds[2][:movies][1][:worldwide_gross] + nds[2][:movies][2][:worldwide_gross] + nds[2][:movies][3][:worldwide_gross] + nds[2][:movies][4][:worldwide_gross] + nds[2][:movies][5][:worldwide_gross] + nds[2][:movies][6][:worldwide_gross],
+            "#{nds[3][:name]}"=> nds[3][:movies][0][:worldwide_gross] + nds[3][:movies][1][:worldwide_gross] + nds[3][:movies][2][:worldwide_gross] + nds[3][:movies][3][:worldwide_gross] + nds[3][:movies][4][:worldwide_gross],
+            "#{nds[4][:name]}"=> nds[4][:movies][0][:worldwide_gross] + nds[4][:movies][1][:worldwide_gross] + nds[4][:movies][2][:worldwide_gross] + nds[4][:movies][3][:worldwide_gross] + nds[4][:movies][4][:worldwide_gross] + nds[4][:movies][5][:worldwide_gross],
+            "#{nds[5][:name]}" => nds[5][:movies][0][:worldwide_gross] + nds[5][:movies][1][:worldwide_gross] + nds[5][:movies][2][:worldwide_gross] + nds[5][:movies][3][:worldwide_gross] + nds[5][:movies][4][:worldwide_gross] + nds[5][:movies][5][:worldwide_gross],
+            "#{nds[6][:name]}" => nds[6][:movies][0][:worldwide_gross] + nds[6][:movies][1][:worldwide_gross] + nds[6][:movies][2][:worldwide_gross] + nds[6][:movies][3][:worldwide_gross] + nds[6][:movies][4][:worldwide_gross] + nds[6][:movies][5][:worldwide_gross],
+            "#{nds[7][:name]}" => nds[7][:movies][0][:worldwide_gross] + nds[7][:movies][1][:worldwide_gross] + nds[7][:movies][2][:worldwide_gross] + nds[7][:movies][3][:worldwide_gross] + nds[7][:movies][4][:worldwide_gross] + nds[7][:movies][5][:worldwide_gross],
+            "#{nds[8][:name]}" => nds[8][:movies][0][:worldwide_gross] + nds[8][:movies][1][:worldwide_gross] + nds[8][:movies][2][:worldwide_gross] + nds[8][:movies][3][:worldwide_gross] + nds[8][:movies][4][:worldwide_gross] + nds[8][:movies][5][:worldwide_gross]
+          }}
    
 end 
 
