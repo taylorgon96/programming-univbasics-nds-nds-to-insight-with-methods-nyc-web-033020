@@ -35,7 +35,8 @@ end
 
 def directors_totals(nds)
  
-   grand_total = {
+   grand_total = 
+          {
             {:name =>
             "#{nds[0][:name]}", 
              :movies => [nds[0][:movies][0][:worldwide_gross] + nds[0][:movies][1][:worldwide_gross] + nds[0][:movies][2][:worldwide_gross] + nds[0][:movies][3][:worldwide_gross] + nds[0][:movies][4][:worldwide_gross] + nds[0][:movies][5][:worldwide_gross]]} 
@@ -63,5 +64,6 @@ def directors_totals(nds)
             {:name =>
             "#{nds[8][:name]}",
              :movies => [nds[8][:movies][0][:worldwide_gross] + nds[8][:movies][1][:worldwide_gross] + nds[8][:movies][2][:worldwide_gross] + nds[8][:movies][3][:worldwide_gross] + nds[8][:movies][4][:worldwide_gross] + nds[8][:movies][5][:worldwide_gross]]}
+          }  
 end 
 
